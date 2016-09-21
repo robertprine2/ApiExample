@@ -1,0 +1,82 @@
+html, body, .row {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*NavBar*/
+
+li a {
+	text-decoration: none;
+	color: #00a3da;
+}
+
+.logo {
+	width: 100%;
+	padding: 10%;
+}
+
+li {
+	margin: 10px;
+	font-size: 20px;
+}
+
+.subLi {
+	margin-left: 30px;
+}
+
+/*Content*/
+
+h1 {
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+h4 {
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+p {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+pre {
+	margin-top: 10px;
+}
+
+.leftSide {
+	background-color: #00a3da;
+	color: white;
+	height: 100%;
+	min-height: 100%
+}
+
+.rightSide {
+	background-color: white;
+	color: black;
+	height: 100%;
+	min-height: 100%
+}
+
+.collapseButton {
+	cursor: pointer;
+}
+
+.row2 > * {
+    min-height: 200px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}

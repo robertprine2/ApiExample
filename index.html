@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>UniKey CORE Platform API</title>
+	<link rel="SHORTCUT ICON" href="assets/images/favicon.ico">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link href="assets/css/navbar-fixed-side.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	
+<div class="container-fluid">
+  	<div class="row">
+   		<div class="col-sm-3 col-lg-2">
+      		<nav class="navbar navbar-default navbar-fixed-side">
+      			<img src="assets/images/favicon.ico" class="logo">
+      			<ul>
+      				<li><a href="#">Getting Started</a></li>
+
+  					<li class="subLi"><a href="#">API Credentials</a></li>
+	      			<li class="subLi"><a href="#">Authentication</a></li>
+	      			<li class="subLi"><a href="#">Best Practices</a></li>
+	      			<li class="subLi"><a href="#">Pagination</a></li>
+	      			<li class="subLi"><a href="#">Rate Limits</a></li>
+	      			<li class="subLi"><a href="#">Time</a></li>
+	      			<li class="subLi"><a href="#">Webhooks</a></li>
+		      			
+      				<li><a href="#">API Reference</a></li>
+      					
+      				<li class="subLi"><a href="#">Lock</a></li>
+      				<li class="subLi"><a href="#">LockCommand</a></li>
+      				<li class="subLi"><a href="#">LockEvent</a></li>
+      				<li class="subLi"><a href="#">OAuth Token</a></li>
+      				<li class="subLi"><a href="#">User</a></li>
+		      			
+      			</ul>
+           	</nav>
+    	</div>
+    	<div style="height: 100%" class="col-sm-9 col-lg-10">
+
+    		<div class="row">
+    			<div class="col-sm-6 col-lg-6 leftSide">
+    				<h1>Description</h1>
+    				<h3 class="collapseButton" data-toggle="collapse" data-target=".collapse_me">Returns information about the current User</h3>
+    			</div>
+    			<div class="col-sm-2 col-lg-2 rightSide">
+    				<h1>Method</h1>
+    				<h3 class="collapseButton" data-toggle="collapse" data-target=".collapse_me">GET</h3>
+    			</div>
+    			<div class="col-sm-4 col-lg-4 rightSide">
+    				<h1>URL</h1>
+    				<h3 class="collapseButton" data-toggle="collapse" data-target=".collapse_me">/me</h3>
+    			</div>
+    		</div>
+    		<div class="row row2">
+    			<div class="col-sm-6 col-lg-6 leftSide collapse collapse_me">
+    				<h4>Request Properties</h4>
+    				<p>None</p>
+    				<h4>Response Properties</h4>
+    				<p>Returns a <a href="#" class="modalLink">User</a> object</p>
+    			</div>
+    			<div class="col-sm-6 col-lg-6 rightSide collapse collapse_me">
+    				<h4>Example Request</h4>
+    				<pre>GET /me</pre>
+    				<h4>Example Response</h4>
+    				<pre>HTTP/1.1 200 OK</pre>
+    				<pre id="_me"></pre>
+    			</div>
+    		</div>
+
+
+    		<div class="row">
+    			<div class="col-sm-6 col-lg-6 leftSide">
+    				<h3 class="collapseButton" data-toggle="collapse" data-target=".collapse_users_userId">Returns information about the User with the given ID</h3>
+    			</div>
+    			<div class="col-sm-2 col-lg-2 rightSide">
+    				<h3 class="collapseButton" data-toggle="collapse" data-target=".collapse_users_userId">GET</h3>
+    			</div>
+    			<div class="col-sm-4 col-lg-4 rightSide">
+    				<h3 class="collapseButton" data-toggle="collapse" data-target=".collapse_users_userId">/users/{user_id}</h3>
+    			</div>
+    		</div>
+    		<div class="row row2">
+    			<div class="col-sm-6 col-lg-6 leftSide collapse collapse_users_userId">
+    				<h4>Request Properties</h4>
+    				<table class="table table-striped">
+    					<tr>
+    						<th>Name</th>
+    						<th>Type</th>
+    						<th>Description</th>
+    					</tr>
+    					<tr>
+    						<td>user_id</td>
+    						<td>UUID</td>
+    						<td><strong>Required</strong> The ID of the User</td>
+    					</tr>
+    				</table>
+    				<h4>Response Properties</h4>
+    				<p>Returns a <a href="#" class="modalLink">User</a> object</p>
+    			</div>
+    			<div class="col-sm-6 col-lg-6 rightSide collapse collapse_users_userId">
+    				<h4>Example Request</h4>
+    				<pre>GET /users/f726aa74-d1db-4ee9-ac00-3d3e77721512</pre>
+    				<h4>Example Response</h4>
+    				<pre>HTTP/1.1 200 OK</pre>
+    				<pre id="_users_userId"></pre>
+    			</div>
+    		</div>
+
+
+    		<div class="row">
+				<div class="col-md-12">
+					<footer>
+						Copyright &copy; 2016 UniKey Technologies, Inc.
+					</footer>
+				</div>
+			</div>	
+
+    	</div>
+  	</div>
+</div>
+
+			
+	
+
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<script src="assets/javascript/json.js"></script>
+</body>
+</html>

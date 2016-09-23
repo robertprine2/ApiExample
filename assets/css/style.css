@@ -2,6 +2,7 @@ html, body, .row {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -31,27 +32,101 @@ li {
 /*Content*/
 
 h1 {
-	font-size: 40px;
+	font-size: 30px;
 	margin-top: 10px;
+	font-weight: 900;
+	padding-bottom: 20px;
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 25px;
 	margin-top: 10px;
+	font-weight: 700;
+	border-top: 2px solid black;
+	padding-bottom: 10px;
+}
+
+pre {
+	font-family: 'Source Code Pro', monospace;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.codeType {
+	font-family: 'Source Code Pro', monospace;
+	color: yellow;
+}
+
+.codeTypeModal {
+	font-family: 'Source Code Pro', monospace;
+	color: red;
+}
+
+.codeValueModal {
+	font-family: 'Source Code Pro', monospace;
+	color: green;
+}
+
+.modalLink {
+	color: orange;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.leftH3 {
+	border-top: 2px solid white;
 }
 
 h4 {
-	font-size: 25px;
+	font-size: 20px;
 	margin-top: 10px;
+	font-weight: 200;
 }
 
 p {
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 10px;
+	padding-left: 30px;
 }
 
 pre {
 	margin-top: 10px;
+	padding-left: 30px;
+}
+
+.string { 
+	color: green; 
+}
+
+.number { 
+	color: darkorange; 
+}
+
+.boolean { 
+	color: blue; 
+}
+
+.null { 
+	color: magenta; 
+}
+
+.key { 
+	color: red; 
+}
+
+th {
+	font-size: 20px;
+	font-weight: 600;
+	width: 30%;
+}
+
+td strong {
+	font-weight: 700;
+}
+
+#override table {
+	margin-top: 10px;
+	padding-left: 30px;
 }
 
 .leftSide {
@@ -72,8 +147,16 @@ pre {
 	cursor: pointer;
 }
 
-.row2 > * {
-    min-height: 200px;
+.height_users > * {
+    min-height: 250px;
+}
+
+.height_users_userId > * {
+    min-height: 250px;
+}
+
+.height_users_userId_locks > * {
+	min-height: 535px;
 }
 
 footer {
